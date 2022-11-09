@@ -1,0 +1,4 @@
+<properties resource="config.properties">
+    <property name="username" value="root"/>
+    <property name="password" value="1234"/>
+</properties>
