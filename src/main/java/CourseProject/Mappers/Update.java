@@ -1,11 +1,11 @@
 package CourseProject.Mappers;
 
 public class Update {
-    private String id;
+    public String id;
 
-    private String parameterType;
+    public String parameterType;
 
-    private String query;
+    public String query;
 
     public Update(String id, String parameterType, String query) {
         this.id = id;

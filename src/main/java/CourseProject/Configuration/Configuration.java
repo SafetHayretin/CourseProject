@@ -1,10 +1,14 @@
 package CourseProject.Configuration;
 
 public class Configuration {
-    public Environments environments;
-    public TypeAliases aliases;
+    public static Environments environments;
+    public static TypeAliases aliases;
 
-    public Mappers mappers;
+    public static Mappers mappers;
+
+    public static Mappers getMappers() {
+        return mappers;
+    }
 
     @Override
     public String toString() {

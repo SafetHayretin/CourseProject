@@ -18,6 +18,10 @@ public class Mappers {
         return mappers;
     }
 
+    public int size() {
+        return mappers.size();
+    }
+
     @Override
     public String toString() {
         return "Mappers{" +

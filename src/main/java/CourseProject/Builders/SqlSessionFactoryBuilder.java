@@ -23,7 +23,7 @@ public class SqlSessionFactoryBuilder {
         } catch (SAXException e) {
             throw new RuntimeException("Wrong xml format");
         } catch (IOException e) {
-            throw new RuntimeException("Wrong input/output !");
+            e.printStackTrace();
         }
 
 
@@ -38,7 +38,7 @@ public class SqlSessionFactoryBuilder {
             } catch (ParserConfigurationException e) {
                 throw new IllegalArgumentException("Resource was not found!");
             } catch (IOException e) {
-                throw new RuntimeException("Wrong xml format");
+                e.printStackTrace();
             } catch (SAXException e) {
                 throw new RuntimeException("Wrong input/output !");
             }

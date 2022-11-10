@@ -12,7 +12,8 @@ public class Employee {
     String job;
     int id;
 
-    public Employee(String first_name, String last_name, String email, String phoneNumber, Date hireDate, int salary, String job) {
+    public Employee(int id, String first_name, String last_name, String email, String phoneNumber, Date hireDate, int salary, String job) {
+        this.id = id;
         this.firstName = first_name;
         this.lastName = last_name;
         this.email = email;

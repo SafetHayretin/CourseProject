@@ -5,7 +5,7 @@ public class Select {
 
     private String resultMap;
 
-    private String query;
+    public String query;
 
     public Select(String id, String resultMap, String query) {
         this.id = id;
