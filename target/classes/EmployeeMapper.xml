@@ -28,8 +28,11 @@
     </delete>
 
     <select id="getAll"  resultMap = "result">
-        SELECT *
-        FROM employee;
+        SELECT * FROM employee;
+    </select>
+
+    <select id="selectById" parameterMap="int"  resultMap = "result">
+        SELECT * FROM employee WHERE employee_id = #{id};
     </select>
 
     <update id="update" parameterType="Homework53.Employee">

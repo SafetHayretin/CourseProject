@@ -2,6 +2,8 @@ package CourseProject.Configuration;
 
 import CourseProject.Mappers.*;
 
+import java.util.HashMap;
+
 public class Mapper {
     public final String resource;
 
@@ -13,7 +15,7 @@ public class Mapper {
 
     public Delete delete;
 
-    public Select select;
+    public HashMap<String, Select> selects = new HashMap<>();
 
     public Update update;
 
@@ -29,7 +31,6 @@ public class Mapper {
                 ", resultMap=" + resultMap +
                 ", insert=" + insert +
                 ", delete=" + delete +
-                ", select=" + select +
                 ", update=" + update +
                 '}';
     }

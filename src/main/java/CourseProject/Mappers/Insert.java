@@ -1,11 +1,12 @@
 package CourseProject.Mappers;
 
 public class Insert {
-    private String id;
+    public String id;
 
-    private String parameterType;
+    public String parameterType;
 
-    private String query;
+    public
+    String query;
 
     public Insert(String id, String parameterType, String query) {
         this.id = id;

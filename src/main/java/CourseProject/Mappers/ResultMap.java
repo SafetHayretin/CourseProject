@@ -6,7 +6,7 @@ public class ResultMap {
     private String id;
     private String type;
 
-    private HashMap<String, String> result = new HashMap<>();
+    public HashMap<String, String> result = new HashMap<>();
 
     public ResultMap(String id, String type) {
         this.id = id;

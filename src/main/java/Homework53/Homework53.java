@@ -12,7 +12,7 @@ public class Homework53 {
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resource);
         SqlSession session = sqlSessionFactory.openSession();
 
-        List<Employee> list = session.selectList("Homework53.Employee.getAll");
-        System.out.println(list);
+        Employee emp = session.select("selectById", 5);
+        System.out.println(emp);
     }
 }

@@ -8,9 +8,27 @@ import java.util.List;
 public interface EmployeeMapper {
 
     @Select("select * from employee")
+    @Results(value = {
+            @Result(property = "id", column = "employee_id"),
+            @Result(property = "firstName", column = "first_name"),
+            @Result(property = "lastName", column = "last_name"),
+            @Result(property = "email", column = "email"),
+            @Result(property = "phoneNumber", column = "phone_number"),
+            @Result(property = "hireDate", column = "hire_date"),
+            @Result(property = "salary", column = "salary"),
+    })
     List<Employee> findAll();
 
     @Select("SELECT * FROM employee WHERE id = #{id}")
+    @Results(value = {
+            @Result(property = "id", column = "employee_id"),
+            @Result(property = "firstName", column = "first_name"),
+            @Result(property = "lastName", column = "last_name"),
+            @Result(property = "email", column = "email"),
+            @Result(property = "phoneNumber", column = "phone_number"),
+            @Result(property = "hireDate", column = "hire_date"),
+            @Result(property = "salary", column = "salary"),
+    })
     Employee selectEmployee(int id);
 
     @Delete("DELETE from Employee WHERE ID = #{id}")

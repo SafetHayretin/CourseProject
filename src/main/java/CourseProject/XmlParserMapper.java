@@ -68,7 +68,7 @@ public class XmlParserMapper {
                         String id = child.getAttributes().item(0).getNodeValue();
                         String parameterType = child.getAttributes().item(1).getNodeValue();
                         String query = child.getTextContent();
-                        mapper.select = new Select(id, parameterType, query);
+                        mapper.selects.put(id, new Select(id, parameterType, query));
                     }
                     case "update" -> {
                         String id = child.getAttributes().item(0).getNodeValue();
@@ -90,8 +90,8 @@ public class XmlParserMapper {
             if (child.getNodeType() == Node.ELEMENT_NODE) {
                 String name = child.getNodeName();
                 if (name.equals("result")) {
-                    String property = child.getAttributes().item(0).getNodeValue();
-                    String column = child.getAttributes().item(1).getNodeValue();
+                    String property = child.getAttributes().item(1).getNodeValue();
+                    String column = child.getAttributes().item(0).getNodeValue();
                     map.add(property, column);
                 }
             }

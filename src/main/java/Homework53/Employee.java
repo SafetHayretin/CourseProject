@@ -23,6 +23,10 @@ public class Employee {
         this.job = job;
     }
 
+    public Employee() {
+
+    }
+
     public String getFirst_name() {
         return firstName;
     }
