@@ -2,12 +2,9 @@ package CourseProject.DAO;
 
 import CourseProject.Configuration.Mapper;
 import CourseProject.DataBase.BasicDataBasePool;
-import CourseProject.Anotations.Select;
-import CourseProject.Anotations.SelectAll;
 import CourseProject.Mappers.ResultMap;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.Method;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -19,7 +16,6 @@ public class CustomDAO {
     private final BasicDataBasePool pool;
 
     public Mapper mapper;
-
     public CustomDAO() throws Exception {
         this.pool = BasicDataBasePool.getConnectionPool();
     }

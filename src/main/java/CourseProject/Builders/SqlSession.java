@@ -8,13 +8,13 @@ import CourseProject.Mappers.Delete;
 import CourseProject.Mappers.Insert;
 import CourseProject.Mappers.Select;
 import CourseProject.Mappers.Update;
-import Homework53.Employee;
-import Homework53.EmployeeMapper;
+import CourseProject.Model.Employee;
+import CourseProject.Mappers.EmployeeMapper;
 
 import java.util.List;
 
 public class SqlSession {
-    CustomDAO dao;
+    private CustomDAO dao;
 
     private Configuration configuration;
 

@@ -8,6 +8,10 @@ public class ResultMap {
 
     public HashMap<String, String> result = new HashMap<>();
 
+    public ResultMap() {
+
+    }
+
     public ResultMap(String id, String type) {
         this.id = id;
         this.type = type;

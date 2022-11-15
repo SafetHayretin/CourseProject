@@ -1,4 +1,4 @@
-package Homework53;
+package CourseProject.Model;
 
 import java.sql.Date;
 

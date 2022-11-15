@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Mappers {
+
     private final List<Mapper> mappers = new ArrayList<>();
 
     public void addMapper(Mapper mapper) {

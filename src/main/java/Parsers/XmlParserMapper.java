@@ -1,4 +1,4 @@
-package CourseProject;
+package Parsers;
 
 import CourseProject.Configuration.Configuration;
 import CourseProject.Configuration.Mapper;
@@ -26,7 +26,7 @@ public class XmlParserMapper {
 
 
     public void getMapper(String resource, int index) throws ParserConfigurationException, IOException, SAXException {
-        File xmlFile = new File("src/main/resources/"+ resource);
+        File xmlFile = new File("src/main/resources/" + resource);
         DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder dBuilder = docFactory.newDocumentBuilder();
         Document doc = dBuilder.parse(xmlFile);

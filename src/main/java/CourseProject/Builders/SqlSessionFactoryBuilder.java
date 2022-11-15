@@ -2,8 +2,8 @@ package CourseProject.Builders;
 
 import CourseProject.Configuration.Configuration;
 import CourseProject.Configuration.Mapper;
-import CourseProject.XmlParserConfig;
-import CourseProject.XmlParserMapper;
+import Homework53.Homework53;
+import Parsers.XmlParserMapper;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;
@@ -13,7 +13,7 @@ import java.util.List;
 public class SqlSessionFactoryBuilder {
 
     public SqlSessionFactory build(String resource) {
-        XmlParserConfig parser = new XmlParserConfig(resource);
+        Homework53.XmlParserConfig parser = new Homework53.Homework53.XmlParserConfig(resource);
         Configuration config = null;
 
         try {

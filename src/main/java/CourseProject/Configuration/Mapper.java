@@ -5,7 +5,7 @@ import CourseProject.Mappers.*;
 import java.util.HashMap;
 
 public class Mapper {
-    public final String resource;
+    public String resource;
 
     public String nameSpace;
 
@@ -18,6 +18,10 @@ public class Mapper {
     public HashMap<String, Select> selects = new HashMap<>();
 
     public Update update;
+
+    public Mapper() {
+
+    }
 
     public Mapper(String resource) {
         this.resource = resource;
